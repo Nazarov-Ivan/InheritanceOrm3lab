@@ -1,9 +1,12 @@
 package ru.sysout.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "post")
+@Data
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
